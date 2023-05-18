@@ -1,8 +1,8 @@
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.alg4.StdRandom;
+import edu.princeton.cs.algs4.StdRandom;
 
-public class RandomWorld {
+public class RandomWord {
   public static void main(String[] args) {
     String champion = "";
     int count = 0;
@@ -17,6 +17,6 @@ public class RandomWorld {
       }
     }
 
-    StdOut.println("Randomly select word: " + champion);
+    StdOut.println(champion);
   }
 }
