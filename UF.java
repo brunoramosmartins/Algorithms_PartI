@@ -1,3 +1,4 @@
+package edu.princeton.cs.algs4;
 public class UF {
 
   private int[] parent; // parent[i] = parent of if
@@ -34,7 +35,7 @@ public class UF {
      validate(p);
      while (p != parent[p]) {
        parent[p] = parent[parent[p]]; // path compression by halving
-       p = parant[p];
+       p = parent[p];
      }
      return p;
    }
@@ -115,5 +116,5 @@ public class UF {
             StdOut.println(p + " " + q);
         }
         StdOut.println(uf.count() + " components");
-    } 
+    }
 }
