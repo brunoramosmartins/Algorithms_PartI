@@ -1,4 +1,7 @@
 import java.util.Arrays;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.In;
 
 public class BinarySearch {
 
@@ -20,7 +23,7 @@ public class BinarySearch {
     while (lo <= hi) {
       // Key is in a[lo..hi] or not present.
       int mid = lo + (hi - lo) / 2;
-      if (key < a[mid]) hi = mid - 1;
+      if      (key < a[mid]) hi = mid - 1;
       else if (key > a[mid]) lo = mid + 1;
       else return mid;
     }
